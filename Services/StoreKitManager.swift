@@ -210,9 +210,4 @@ class StoreKitManager: ObservableObject {
     }
 }
 
-/// StoreKit 2 Product extension for backward compatibility.
-extension Product {
-    convenience init(id: String, displayName: String, description: String, displayPrice: String, family: Product.ProductFamily) {
-        self.init(id: id, displayName: displayName, description: description, displayPrice: displayPrice, family: family)
-    }
-}
+

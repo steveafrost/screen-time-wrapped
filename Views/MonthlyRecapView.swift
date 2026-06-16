@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Monthly recap view — Pro feature with a summary of the past month.
 struct MonthlyRecapView: View {

@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Weekly recap view with a card slideshow of screen time stats.
 struct WeeklyRecapView: View {

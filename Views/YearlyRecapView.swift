@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Yearly "ScreenTime Wrapped" experience — flagship Pro feature.
 /// Full-screen card slideshow with annual stats, comparisons, and insights.

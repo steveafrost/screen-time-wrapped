@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Card customization view — allows theme selection and preview before sharing.
 struct ShareCardView: View {
