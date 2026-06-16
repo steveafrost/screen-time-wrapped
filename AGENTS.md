@@ -69,11 +69,24 @@ ScreenTimeWrapped/
 
 ## What's Placeholder / Needs Real Device
 
-### Screen Time API Entitlement
+### ✅ Screen Time API Entitlement — Guide Included
+See `FAMILY_CONTROLS_ENTITLEMENT.md` in this repo for the complete step-by-step guide.
 The Screen Time API requires a **special entitlement** from Apple (`com.apple.developer.familycontrols`). Without it:
 - `DeviceActivityCenter`, `FamilyControls`, and `ManagedSettingsStore` calls will fail at runtime
 - The app falls back to `ScreenTimeData.preview` — realistic sample data
-- **To ship:** Apply for the entitlement at developer.apple.com, add it to your App ID, and configure in Xcode
+
+**Status:** Entitlement request form prepared with draft response. Needs Account Holder to submit at https://developer.apple.com/contact/request/family-controls-distribution. Timeline: 1–3 weeks for approval.
+
+**Key points:**
+- Bundle ID for main app: `com.steveafrost.ScreenTimeWrapped`
+- Use case: Self-management (individual) — reading own Screen Time data for recap cards
+- All processing on-device, no data transmission
+- Fast approval expected since we don't block/shield anything
+
+**After approval:**
+1. Regenerate provisioning profile
+2. The entitlement appears as "Assigned" with distribution support
+3. Archive → TestFlight
 
 ### StoreKit Configuration
 For testing purchases without App Store Connect:
