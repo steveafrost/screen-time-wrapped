@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BLD_90662AAE979B4B01A8B507DB /* App/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_63B02A4CEDE14E64897E5128 /* App/ContentView.swift */; };
+		BLD_BC695E515C334653AB4D3905 /* App/ScreenTimeWrappedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_4939EB8F8C1145BC99A2E7B6 /* App/ScreenTimeWrappedApp.swift */; };
+		BLD_9F263A55D30B49F789C5F856 /* Models/MonthlyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_E0A7268D9C0A4FA989718D29 /* Models/MonthlyReport.swift */; };
+		BLD_B409F596C6AD40EF9112FA19 /* Models/ProUnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_95AA61FA537F48F7A104A528 /* Models/ProUnlockManager.swift */; };
+		BLD_48221FC18CB44E76B26DC730 /* Models/ScreenTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_D7848A3B1E384B09BDA8001B /* Models/ScreenTimeData.swift */; };
+		BLD_A471BC4A5344431896A9596E /* Models/WeeklyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_54597084D2F3475E85298B11 /* Models/WeeklyReport.swift */; };
+		BLD_54208C6AEFE64EBB82F357C0 /* Models/YearlyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_E885A83D343545EB993D7C94 /* Models/YearlyReport.swift */; };
+		BLD_A7F6C942FA154081807F4A9A /* Services/CardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_CF02D55D731B483B93F8FAE1 /* Services/CardRenderer.swift */; };
+		BLD_394701D720484FE89FF75931 /* Services/NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_F8617C0E99944FB586972516 /* Services/NotificationService.swift */; };
+		BLD_FA77A5D7805E4CF9A1554279 /* Services/ReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_CB0A95F687DA4361B252F35C /* Services/ReportGenerator.swift */; };
+		BLD_6ECB7A9EA4044012892D8589 /* Services/ScreenTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_FA5C01F2920B49E181F95176 /* Services/ScreenTimeService.swift */; };
+		BLD_DECCF3AF4F1B4E088F71EF47 /* Services/StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_7AD857AB129F44CAB2949B98 /* Services/StoreKitManager.swift */; };
+		BLD_71237C6200DD4072ACA4C477 /* Views/DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_C02E0A9D751D47CE968C8E59 /* Views/DashboardView.swift */; };
+		BLD_31B52981F817454D9BF14C5B /* Views/MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_979948C5E1D24A5E8E06F32F /* Views/MainTabView.swift */; };
+		BLD_B7752A79BE2145ACA8D674F6 /* Views/MonthlyRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_4D62DF9455B8416EA7D944A3 /* Views/MonthlyRecapView.swift */; };
+		BLD_63F0454304874CBE9489F16B /* Views/ProUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_F1FC0D7B35AE45C58213D996 /* Views/ProUpgradeView.swift */; };
+		BLD_6F0885CD3A11499FA9006C7F /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_AE63932FA8884EEEB23E7F2A /* Views/SettingsView.swift */; };
+		BLD_F20B4E81E8BD4AA297E6F4AF /* Views/ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_31308229084A463DA3C3C89C /* Views/ShareCardView.swift */; };
+		BLD_F9AFBF98DFA542AEA3793C50 /* Views/WeeklyRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_A3CC220A425440FC92674B48 /* Views/WeeklyRecapView.swift */; };
+		BLD_13303ED26983483BA558EE0F /* Views/YearlyRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_1079BB4B91B04FC1A6599E01 /* Views/YearlyRecapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		REF_682A4728472545609AB535DB /* .gitignore */ = {isa = PBXFileReference;; lastKnownFileType = text; path = ".gitignore"; sourceTree = "<group>"; };
+		REF_378310ED818245C1AB0E76BF /* AGENTS.md */ = {isa = PBXFileReference;; lastKnownFileType = text; path = "AGENTS.md"; sourceTree = "<group>"; };
+		REF_63B02A4CEDE14E64897E5128 /* ContentView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_4939EB8F8C1145BC99A2E7B6 /* ScreenTimeWrappedApp.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_E0A7268D9C0A4FA989718D29 /* MonthlyReport.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_95AA61FA537F48F7A104A528 /* ProUnlockManager.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_D7848A3B1E384B09BDA8001B /* ScreenTimeData.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_54597084D2F3475E85298B11 /* WeeklyReport.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_E885A83D343545EB993D7C94 /* YearlyReport.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_CF02D55D731B483B93F8FAE1 /* CardRenderer.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_F8617C0E99944FB586972516 /* NotificationService.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_CB0A95F687DA4361B252F35C /* ReportGenerator.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_FA5C01F2920B49E181F95176 /* ScreenTimeService.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_7AD857AB129F44CAB2949B98 /* StoreKitManager.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_C02E0A9D751D47CE968C8E59 /* DashboardView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_979948C5E1D24A5E8E06F32F /* MainTabView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_4D62DF9455B8416EA7D944A3 /* MonthlyRecapView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_F1FC0D7B35AE45C58213D996 /* ProUpgradeView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_AE63932FA8884EEEB23E7F2A /* SettingsView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_31308229084A463DA3C3C89C /* ShareCardView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_A3CC220A425440FC92674B48 /* WeeklyRecapView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_1079BB4B91B04FC1A6599E01 /* YearlyRecapView.swift */ = {isa = PBXFileReference;; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		PROD_REF_D053D69977A44C2D9AFE7A35 /* ScreenTimeWrapped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScreenTimeWrapped.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		GROUP_MAIN_BC0E451CD63642B4A2781B6F = {
+			isa = PBXGroup;
+			children = (
+				GROUP_7F8CA2922136468FAE61EFF4 /* App */,
+				GROUP_4376C3411C334455A13C13BB /* Services */,
+				GROUP_C2A7D604D8114A03A0FEA64E /* Models */,
+				GROUP_DB0874D7CE7B42B0AC9DFA70 /* Views */,
+				GROUP_PROD_961C70DDF7B54DD49FFAF54B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GROUP_PROD_961C70DDF7B54DD49FFAF54B = {
+			isa = PBXGroup;
+			children = (
+				PROD_REF_D053D69977A44C2D9AFE7A35 /* ScreenTimeWrapped.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GROUP_7F8CA2922136468FAE61EFF4 = {
+			isa = PBXGroup;
+			children = (
+				REF_63B02A4CEDE14E64897E5128 /* ContentView.swift */,
+				REF_4939EB8F8C1145BC99A2E7B6 /* ScreenTimeWrappedApp.swift */,
+			);
+			path = "App";
+			sourceTree = "<group>";
+		};
+		GROUP_4376C3411C334455A13C13BB = {
+			isa = PBXGroup;
+			children = (
+				REF_CF02D55D731B483B93F8FAE1 /* CardRenderer.swift */,
+				REF_F8617C0E99944FB586972516 /* NotificationService.swift */,
+				REF_CB0A95F687DA4361B252F35C /* ReportGenerator.swift */,
+				REF_FA5C01F2920B49E181F95176 /* ScreenTimeService.swift */,
+				REF_7AD857AB129F44CAB2949B98 /* StoreKitManager.swift */,
+			);
+			path = "Services";
+			sourceTree = "<group>";
+		};
+		GROUP_C2A7D604D8114A03A0FEA64E = {
+			isa = PBXGroup;
+			children = (
+				REF_E0A7268D9C0A4FA989718D29 /* MonthlyReport.swift */,
+				REF_95AA61FA537F48F7A104A528 /* ProUnlockManager.swift */,
+				REF_D7848A3B1E384B09BDA8001B /* ScreenTimeData.swift */,
+				REF_54597084D2F3475E85298B11 /* WeeklyReport.swift */,
+				REF_E885A83D343545EB993D7C94 /* YearlyReport.swift */,
+			);
+			path = "Models";
+			sourceTree = "<group>";
+		};
+		GROUP_DB0874D7CE7B42B0AC9DFA70 = {
+			isa = PBXGroup;
+			children = (
+				REF_C02E0A9D751D47CE968C8E59 /* DashboardView.swift */,
+				REF_979948C5E1D24A5E8E06F32F /* MainTabView.swift */,
+				REF_4D62DF9455B8416EA7D944A3 /* MonthlyRecapView.swift */,
+				REF_F1FC0D7B35AE45C58213D996 /* ProUpgradeView.swift */,
+				REF_AE63932FA8884EEEB23E7F2A /* SettingsView.swift */,
+				REF_31308229084A463DA3C3C89C /* ShareCardView.swift */,
+				REF_A3CC220A425440FC92674B48 /* WeeklyRecapView.swift */,
+				REF_1079BB4B91B04FC1A6599E01 /* YearlyRecapView.swift */,
+			);
+			path = "Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		NATIVE_TGT_F990AC09E7F1494CB75C34FD = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = TGT_CFGL_0CE170404A70474CAA7254B5 /* Build configuration list for PBXNativeTarget "ScreenTimeWrapped" */;
+			buildPhases = (
+				SRC_PHASE_98726611FD3946ACB156AF36,
+				FW_PHASE_4CD02A24B55B452F9DA2FC4D,
+				RES_PHASE_A2AA8DCD95FC411AA1023926,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = "ScreenTimeWrapped";
+			productName = "ScreenTimeWrapped";
+			productReference = PROD_REF_D053D69977A44C2D9AFE7A35;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT_9B0A120D83AB4F32A0CCEA21 = {
+			isa = PBXProject;
+			buildConfigurationList = PROJ_CFGL_42B6681A8F2746BD8A629423 /* Build configuration list for PBXProject "ScreenTimeWrapped" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "en";
+			hasScannedForEncodings = 0;
+			knownRegions = ("en", "Base", );
+			mainGroup = GROUP_MAIN_BC0E451CD63642B4A2781B6F;
+			productRefGroup = GROUP_PROD_961C70DDF7B54DD49FFAF54B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				NATIVE_TGT_F990AC09E7F1494CB75C34FD,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RES_PHASE_A2AA8DCD95FC411AA1023926 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRC_PHASE_98726611FD3946ACB156AF36 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BLD_90662AAE979B4B01A8B507DB /* App/ContentView.swift in Sources */,
+				BLD_BC695E515C334653AB4D3905 /* App/ScreenTimeWrappedApp.swift in Sources */,
+				BLD_9F263A55D30B49F789C5F856 /* Models/MonthlyReport.swift in Sources */,
+				BLD_B409F596C6AD40EF9112FA19 /* Models/ProUnlockManager.swift in Sources */,
+				BLD_48221FC18CB44E76B26DC730 /* Models/ScreenTimeData.swift in Sources */,
+				BLD_A471BC4A5344431896A9596E /* Models/WeeklyReport.swift in Sources */,
+				BLD_54208C6AEFE64EBB82F357C0 /* Models/YearlyReport.swift in Sources */,
+				BLD_A7F6C942FA154081807F4A9A /* Services/CardRenderer.swift in Sources */,
+				BLD_394701D720484FE89FF75931 /* Services/NotificationService.swift in Sources */,
+				BLD_FA77A5D7805E4CF9A1554279 /* Services/ReportGenerator.swift in Sources */,
+				BLD_6ECB7A9EA4044012892D8589 /* Services/ScreenTimeService.swift in Sources */,
+				BLD_DECCF3AF4F1B4E088F71EF47 /* Services/StoreKitManager.swift in Sources */,
+				BLD_71237C6200DD4072ACA4C477 /* Views/DashboardView.swift in Sources */,
+				BLD_31B52981F817454D9BF14C5B /* Views/MainTabView.swift in Sources */,
+				BLD_B7752A79BE2145ACA8D674F6 /* Views/MonthlyRecapView.swift in Sources */,
+				BLD_63F0454304874CBE9489F16B /* Views/ProUpgradeView.swift in Sources */,
+				BLD_6F0885CD3A11499FA9006C7F /* Views/SettingsView.swift in Sources */,
+				BLD_F20B4E81E8BD4AA297E6F4AF /* Views/ShareCardView.swift in Sources */,
+				BLD_F9AFBF98DFA542AEA3793C50 /* Views/WeeklyRecapView.swift in Sources */,
+				BLD_13303ED26983483BA558EE0F /* Views/YearlyRecapView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FW_PHASE_4CD02A24B55B452F9DA2FC4D = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DEBUG_CFG_D1E279587CAA49D9B7D031AA = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ScreenTimeWrapped";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = ( "$(inherited)", "@executable_path/Frameworks" );
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steveafrost.ScreenTimeWrapped";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		RELEASE_CFG_33FEBD190E0A482B9AE230B0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ScreenTimeWrapped";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = ( "$(inherited)", "@executable_path/Frameworks" );
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steveafrost.ScreenTimeWrapped";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		PROJ_CFGL_42B6681A8F2746BD8A629423 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_CFG_D1E279587CAA49D9B7D031AA,
+				RELEASE_CFG_33FEBD190E0A482B9AE230B0,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		TGT_CFGL_0CE170404A70474CAA7254B5 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_CFG_D1E279587CAA49D9B7D031AA,
+				RELEASE_CFG_33FEBD190E0A482B9AE230B0,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT_9B0A120D83AB4F32A0CCEA21 /* Project object */;
+}
