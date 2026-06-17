@@ -27,6 +27,10 @@
 		BLD_F20B4E81E8BD4AA297E6F4AF /* Views/ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_31308229084A463DA3C3C89C /* Views/ShareCardView.swift */; };
 		BLD_F9AFBF98DFA542AEA3793C50 /* Views/WeeklyRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_A3CC220A425440FC92674B48 /* Views/WeeklyRecapView.swift */; };
 		BLD_13303ED26983483BA558EE0F /* Views/YearlyRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_1079BB4B91B04FC1A6599E01 /* Views/YearlyRecapView.swift */; };
+		BLD_3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F /* Intents/GetScreenTimeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_A1B2C3D4E5F6A7B8C9D0E1F2A3B4C5D /* Intents/GetScreenTimeIntent.swift */; };
+		BLD_4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9 /* Intents/GetWeeklyRecapIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_F1E2D3C4B5A6F7E8D9C0B1A2B3C4D5E /* Intents/GetWeeklyRecapIntent.swift */; };
+		BLD_5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0 /* Intents/AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6 /* Intents/AppShortcuts.swift */; };
+		BLD_6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1 /* Resources/LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = REF_2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7 /* Resources/LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		REF_ENTITLEMENTS /* ScreenTimeWrapped.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Resources/ScreenTimeWrapped.entitlements"; sourceTree = "<group>"; };
 		REF_FAMILY_CONTROLS_GUIDE /* FAMILY_CONTROLS_ENTITLEMENT.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = "FAMILY_CONTROLS_ENTITLEMENT.md"; sourceTree = "<group>"; };
 		REF_README /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README.md"; sourceTree = "<group>"; };
+		REF_A1B2C3D4E5F6A7B8C9D0E1F2A3B4C5D /* GetScreenTimeIntent.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_F1E2D3C4B5A6F7E8D9C0B1A2B3C4D5E /* GetWeeklyRecapIntent.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6 /* AppShortcuts.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; };
+		REF_2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Resources/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -67,10 +75,12 @@
 				REF_FAMILY_CONTROLS_GUIDE /* FAMILY_CONTROLS_ENTITLEMENT.md */,
 				REF_README /* README.md */,
 				REF_ENTITLEMENTS /* ScreenTimeWrapped.entitlements */,
+				REF_2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7 /* LaunchScreen.storyboard */,
 				GROUP_7F8CA2922136468FAE61EFF4 /* App */,
 				GROUP_4376C3411C334455A13C13BB /* Services */,
 				GROUP_C2A7D604D8114A03A0FEA64E /* Models */,
 				GROUP_DB0874D7CE7B42B0AC9DFA70 /* Views */,
+				GROUP_7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2 /* Intents */,
 				GROUP_PROD_961C70DDF7B54DD49FFAF54B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +141,16 @@
 			path = "Views";
 			sourceTree = "<group>";
 		};
+		GROUP_7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2 = {
+			isa = PBXGroup;
+			children = (
+				REF_A1B2C3D4E5F6A7B8C9D0E1F2A3B4C5D /* GetScreenTimeIntent.swift */,
+				REF_F1E2D3C4B5A6F7E8D9C0B1A2B3C4D5E /* GetWeeklyRecapIntent.swift */,
+				REF_1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6 /* AppShortcuts.swift */,
+			);
+			path = "Intents";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BLD_6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1 /* Resources/LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +225,9 @@
 				BLD_F20B4E81E8BD4AA297E6F4AF /* Views/ShareCardView.swift in Sources */,
 				BLD_F9AFBF98DFA542AEA3793C50 /* Views/WeeklyRecapView.swift in Sources */,
 				BLD_13303ED26983483BA558EE0F /* Views/YearlyRecapView.swift in Sources */,
+				BLD_3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F /* Intents/GetScreenTimeIntent.swift in Sources */,
+				BLD_4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9 /* Intents/GetWeeklyRecapIntent.swift in Sources */,
+				BLD_5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0 /* Intents/AppShortcuts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
