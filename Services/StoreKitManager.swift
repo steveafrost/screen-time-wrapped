@@ -12,6 +12,12 @@ class StoreKitManager: ObservableObject {
     @Published var purchaseError: PurchaseError?
 
     private let proProductID = "com.nousresearch.screentimewrapped.pro"
+    private weak var proUnlockManager: ProUnlockManager?
+
+    /// Link the ProUnlockManager so purchase/restore updates the UI correctly.
+    func configure(proUnlockManager: ProUnlockManager) {
+        self.proUnlockManager = proUnlockManager
+    }
 
     enum PurchaseError: LocalizedError {
         case productNotFound
@@ -51,9 +57,8 @@ class StoreKitManager: ObservableObject {
             } catch {
                 await MainActor.run {
                     self.isLoadingProducts = false
-                    // If StoreKit test environment isn't configured, create a
-                    // simulated product for development.
-                    self.products = [self.simulatedProduct()]
+                    // Products remain empty when StoreKit isn't configured;
+                    // purchase flow will show productNotFound error gracefully.
                 }
             }
         }
@@ -78,7 +83,7 @@ class StoreKitManager: ObservableObject {
                 let transaction = try checkVerified(verification)
                 await MainActor.run {
                     self.isPurchasing = false
-                    ProUnlockManager().unlockPro()
+                    self.proUnlockManager?.unlockPro()
                 }
                 await transaction.finish()
                 return true
@@ -131,7 +136,7 @@ class StoreKitManager: ObservableObject {
             await MainActor.run {
                 self.isPurchasing = false
                 if hasValidTransaction {
-                    ProUnlockManager().unlockPro()
+                    self.proUnlockManager?.unlockPro()
                 }
             }
             return hasValidTransaction
@@ -153,9 +158,9 @@ class StoreKitManager: ObservableObject {
                     if transaction.productID == proProductID {
                         await MainActor.run {
                             if transaction.revocationDate == nil {
-                                ProUnlockManager().unlockPro()
+                                self.proUnlockManager?.unlockPro()
                             } else {
-                                ProUnlockManager().resetPro()
+                                self.proUnlockManager?.resetPro()
                             }
                         }
                     }
@@ -174,7 +179,7 @@ class StoreKitManager: ObservableObject {
                 let transaction = try checkVerified(result)
                 if transaction.productID == proProductID {
                     await MainActor.run {
-                        ProUnlockManager().unlockPro()
+                        self.proUnlockManager?.unlockPro()
                     }
                     return true
                 }
@@ -194,19 +199,6 @@ class StoreKitManager: ObservableObject {
         case .verified(let safe):
             return safe
         }
-    }
-
-    /// Create a simulated product for development/testing without StoreKit config.
-    private func simulatedProduct() -> Product {
-        // We create a minimal product representation for development.
-        // In production, this comes from App Store Connect.
-        Product(
-            id: proProductID,
-            displayName: "ScreenTime Wrapped Pro",
-            description: "Unlock monthly & yearly recaps, custom themes, video export, and more!",
-            displayPrice: "$4.99",
-            family: .nonConsumable
-        )
     }
 }
 

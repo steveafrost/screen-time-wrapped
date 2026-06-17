@@ -23,6 +23,7 @@ struct ScreenTimeWrappedApp: App {
                 .environmentObject(screenTimeService)
                 .environmentObject(proUnlockManager)
                 .onAppear {
+                    storeKitManager.configure(proUnlockManager: proUnlockManager)
                     storeKitManager.loadProducts()
                     screenTimeService.requestAuthorization()
                 }
